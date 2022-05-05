@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            
+            /* Transformar um box-level em um inline-level */
+            /*display: inline;*/
+            
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px; /* Espessura da borda
+            border-style: groove;
+            **Tipos de bordas 
+            **solid: sólida
+            **dashed: tracejada
+            **doted: pontilhada
+            **groove: tipo 3d/sombreada
+            border-color: darkslategray;*/
+
+            /*Shorthand de border*/
+            border: 10px solid darkslategray;
+
+            /* Sempre configurar no sentido horario*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* Configura todas as bordas em 10 pixels */
+            /*padding: 10px;*/
+
+            /* Configura as bordas de cima em 10 e as bordas laterais em 20 pixels */
+            /*padding: 10px 20px;*/
+
+            /* Sempre configurar no sentido horario*/
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 20px;*/
+
+            /* Abreviação do uso do margin */
+            margin: 20px auto 40px auto;
+            
+            /* Centralizando a caixa pelas duas laterais*/
+            /*margin: 10px auto 20px auto;*/
+            
+            /* Margem centralizada automaticamente */
+            /*margin: auto;*/
+
+            /* Borda da borda, que fica entre a margem da caixa e a borda */
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+
+            /* Abreviação do outline */
+            outline: 5px dashed salmon;
+        }
+
+        a { /* inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

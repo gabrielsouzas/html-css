@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /* Dica
+        Os parâmetros de uma shorthand não precisam de virgula para separar, mas os de métodos sempre precisarão
+        
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(128, 128, 128, 0.562);
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: gray;
+            padding: 3px;
+            /*box-shadow: deslocamento_horizontal deslocamento_vertical blur espalhamento cor*/
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.466);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+        section#assunto {
+            background-color: rgb(187, 175, 175);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: rgb(96, 100, 100);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+        footer > P {
+            margin: 0px;
+        }
+        /* Criar um circulo em CSS
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }*/
+    </style>
+</head>
+<body>
+    <!-- Divs Semanticas -->
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!-- Conteúdo -->
+    <main>
+        <section id="assunto">
+            <p>Esporte Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illum sequi dolore doloremque saepe maiores. Beatae aperiam adipisci, maiores ea voluptate distinctio harum vel consectetur! Delectus non rem esse quisquam!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

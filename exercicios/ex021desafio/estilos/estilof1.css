@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200&display=swap');
+
+:root {
+    --fonte: 'Titillium Web', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--fonte);
+}
+
+.nav1 {
+    background-color: red;
+    height: 69px;
+}
+
+a.menu {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px;
+    transition-duration: .5s;
+    text-align: center;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.menu:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.divprincipal {
+    columns: 2;
+}
+
+.colunadivs1 {
+    display: inline-block;
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    border-top: 10px solid red;
+    border-right: 10px solid red;
+
+    border-top-right-radius: 5%;
+}
+
+.divnoticias {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+
+    border-bottom: 1px solid rgba(88, 87, 87, 0.568);
+    border-right: 1px solid rgba(88, 87, 87, 0.568);
+
+    border-bottom-right-radius: 5%;
+}
+
+.divnoticias:hover {
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.divnoticias:hover > img {
+    width: 110%;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.imgprincipal {
+    width: 100%;
+}
+
+.imgnoticias {
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+}

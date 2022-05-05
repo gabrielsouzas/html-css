@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Tenta as três fontes até que encontre uma que tenha instalada no dispositivo*/
+            /*Se colocar apenas sans-serif o dispositivo vai buscar uma fonte sem serifa instalada no dispositivo
+            Ex: font-family: sans-serif;*/
+            
+            font-size: 1em;
+            /* 
+            Medidad Absolutas
+            cm, mm, in, px (pixel - RECOMENDADO W3C), pt, pc
+
+            Medidas Relativas
+            em: Relativa ao tamanho atual da fonte (Maiusculo)  - RECOMENDADO W3C
+            ex: Relativa a altura X de uma fonte
+            rem: Tipo em, mas é relativo ao root, ou seja, a fonte configurada no body
+            vw: relativo a largura da view port (tela)
+            vh: relativo a altura da view port (tela)
+            */
+            /*16 PX COSTUMA SER O TAMANHO PADRÃO DA FONTE
+            16px geralmente = 1em*/
+
+            font-weight: normal;
+            /* 
+            weight: Peso
+            -> lighter normal bold bolder
+            width: Largura
+            height: Altura
+            */
+            
+            font-style: italic;
+            /* -> italic normal*/
+
+            text-decoration: underline;
+            /* sublinhado*/
+        }
+
+        h1 {
+            /*
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            
+            /* ^ */
+            /* | */
+
+            font: italic bolder 3em 'Courier New', Courier, monospace;
+            /* shorthand font (encurtação de código) 
+            Ordem: font-style -> font-weight -> font-size -> font-family
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi doloribus qui sapiente, illum eius optio et, ipsa, quam vel porro enim labore fugit ullam soluta ut cumque iusto voluptas quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam laudantium quisquam magni error quasi soluta ex officia. Minus aperiam porro distinctio. Saepe quod mollitia quibusdam iste dolore vero quo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque vel aliquam quia asperiores tempore rem dolorum voluptatibus explicabo repudiandae beatae error laboriosam, maxime aperiam, excepturi similique distinctio, officia quod tempora.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quo repellendus aperiam veritatis recusandae iste aspernatur in cum unde praesentium neque est impedit nihil perferendis dolor minus, odio nostrum numquam?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste saepe esse, quis voluptatum cupiditate, doloribus ex molestiae, consequatur ab praesentium quaerat distinctio officiis. Iusto, ducimus? Voluptatem maiores ex alias totam?</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        /*
+            #  = id (Identificador único de tag)
+            .  = class (Identificador de grupo tags)
+            :  = pseudo-class (Como se fosse um método)
+            :: = pseudo-element (Como se fosse um atributo)
+            >  = children (Uma tag dentro de outra)
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Se um link (tag a) for visitado fica darkred */
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Quando clicar no link a letra fica amarela, quando soltar volta ao normal */
+        a:active {
+            color: yellow;
+        }
+
+        /* Depois de todos os links vai colocar a palavra [link] no texto do paragrafo do link */
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            color: gray;
+            font-weight: normal;
+        }
+
+        /* Antes de todos os links vai colocar a palavra [link] no texto do paragrafo do link */
+        a::before {
+            content: '[link] ';
+            text-decoration: none;
+            color: gray;
+            font-weight: normal;
+        }
+
+        .especial {
+            background-color: darkred;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>
