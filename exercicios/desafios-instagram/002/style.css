@@ -1,0 +1,19 @@
+:root {
+    --color: red;
+}
+div {
+    background: rgb(241, 238, 238);
+    text-align: center;
+    font-family: sans-serif;
+    height: 50px;
+}
+div:hover {
+    background: var(--color);
+    color: #fff;
+    border-radius: 5px;
+    /* Esse box shadow cria um efeito de luminosidade no botão */
+    box-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 100px var(--color);
+}
