@@ -1,1 +1,1 @@
-Dados enviados!
+Dados passados!
