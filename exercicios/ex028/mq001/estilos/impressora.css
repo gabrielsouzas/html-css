@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Estilos para a impressão*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    /* Fonte monoespaçada que é melhor para a leitura em papel */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    /* Remove o menu da visualização */
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+/* Adiciona um texto após a tag article */
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
