@@ -21,8 +21,24 @@ header > h1 {
 }
 
 /* MENU */
+
+/* ìcone do menu */
+span#burguer {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
@@ -43,6 +59,7 @@ menu > ul > li > a:hover {
     background-color: gray;
 }
 
+/* TEXTO */
 main {
     width: 90vw;
     background-color: white;
@@ -65,5 +82,4 @@ article > p {
     text-indent: 20px;
 }
 
-/* TEXTO */
 
