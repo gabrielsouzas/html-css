@@ -1,79 +1,69 @@
 @charset "UTF-8";
 
 * {
-    padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
-    height: 100vh;
-    width: 100vw;
+    background-color: lightgray;
 }
 
 /* CABEÇALHO */
 header {
-    background-image: linear-gradient(to right, #c43c3c, #ca6969, #e9b3b3);
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
 }
 
 /* MENU */
-h1 {
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border: 2px solid gray;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    list-style: none;
-    padding-left: 5px;
-}
-
-li {
-    background-color: rgba(48, 47, 47, 0.87);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-li:hover {
+menu > ul > li > a:hover {
     background-color: gray;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+main {
+    width: 90vw;
+    background-color: white;
+    /* Centralizar */
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+article > h2 {
+    padding-bottom: 20px;
+} 
+
+article > p {
+    text-align: justify;
+    /* Coloca um espaço embaixo de cada paragrafo */
+    margin-bottom: 10px;
+    /* Coloca um espaço no inicio de cada paragrafo */
+    text-indent: 20px;
+}
 
 /* TEXTO */
 
-main {
-    background-image: linear-gradient(120deg, #383636, #888585, #999696);
-}
-
-article {
-    background-color: white;
-    border-radius: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 25px;
-}
-
-article h2 {
-    text-align: center;
-    padding-bottom: 15px;
-}
-
-p {
-    text-align: justify;
-}
-
-@media screen and (max-width:600px){
-    article {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
