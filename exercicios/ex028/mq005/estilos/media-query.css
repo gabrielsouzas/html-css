@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Media Query para Tablets (Acima de 768px) */
+@media screen and (min-width: 768px) {
+
+    /* Esconde o menu de hamburguer */
+    span#burguer {
+        display: none;
+    }
+
+    /* Faz o menu padrão aparecer */
+    menu {
+        display: block;
+    }
+
+    /* Coloca os itens do menu lado a lado */
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    /* Quando a tela fica maior o tamanho do painel do texto fica menor */
+    main {
+        width: 768px;
+    }
+}
